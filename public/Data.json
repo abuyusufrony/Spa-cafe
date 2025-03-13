@@ -1,11 +1,12 @@
 [
     {
         "id": 1,
+        "title": "The Future of Tech and AI",
         "cover": "https://picsum.photos/800/400",
         "author": "John Doe",
-        "author-img": "https://picsum.photos/100/100?random=1",
-        "posted-date": "2023-09-15",
-        "reading-time": 5,
+        "author_img": "https://picsum.photos/100/100?random=1",
+        "posted_date": "2023-09-15",
+        "reading_time": 5,
         "hashtag": [
             "tech",
             "innovation",
@@ -14,11 +15,12 @@
     },
     {
         "id": 2,
+        "title": "Wellness and Fitness Trends",
         "cover": "https://picsum.photos/800/400?grayscale",
         "author": "Jane Smith",
-        "author-img": "https://picsum.photos/100/100?random=2",
-        "posted-date": "2023-08-22",
-        "reading-time": 7,
+        "author_img": "https://picsum.photos/100/100?random=2",
+        "posted_date": "2023-08-22",
+        "reading_time": 7,
         "hashtag": [
             "health",
             "fitness",
@@ -27,11 +29,12 @@
     },
     {
         "id": 3,
+        "title": "Exploring Nature and Adventure",
         "cover": "https://picsum.photos/800/400?blur",
         "author": "Alice Johnson",
-        "author-img": "https://picsum.photos/100/100?random=3",
-        "posted-date": "2023-07-30",
-        "reading-time": 6,
+        "author_img": "https://picsum.photos/100/100?random=3",
+        "posted_date": "2023-07-30",
+        "reading_time": 6,
         "hashtag": [
             "travel",
             "adventure",
@@ -40,11 +43,12 @@
     },
     {
         "id": 4,
+        "title": "Finance and Investing Insights",
         "cover": "https://picsum.photos/800/400?random=1",
         "author": "Bob Brown",
-        "author-img": "https://picsum.photos/100/100?random=4",
-        "posted-date": "2023-06-10",
-        "reading-time": 8,
+        "author_img": "https://picsum.photos/100/100?random=4",
+        "posted_date": "2023-06-10",
+        "reading_time": 8,
         "hashtag": [
             "finance",
             "investing",
@@ -53,11 +57,12 @@
     },
     {
         "id": 5,
+        "title": "Delicious Recipes and Cooking Tips",
         "cover": "https://picsum.photos/800/400?random=2",
         "author": "Charlie Davis",
-        "author-img": "https://picsum.photos/100/100?random=5",
-        "posted-date": "2023-05-05",
-        "reading-time": 4,
+        "author_img": "https://picsum.photos/100/100?random=5",
+        "posted_date": "2023-05-05",
+        "reading_time": 4,
         "hashtag": [
             "food",
             "cooking",
