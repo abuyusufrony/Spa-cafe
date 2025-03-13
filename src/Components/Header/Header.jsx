@@ -7,12 +7,12 @@ const Header = () => {
             <h1 className='text-4xl font-bold '>Knowlage Cafe</h1>
             <img src={profile} alt="" />
 
-            <button
+            {/* <button
                 className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition cursor-pointer"
                 onClick={() => alert("Clicked!")}
             >
                 Order Coffe
-            </button>
+            </button> */}
         </header>
 
     );
