@@ -7,12 +7,13 @@ import { FaBookmark } from "react-icons/fa";
 
 
 
-const Blog = ({ blg, addBookmarks }) => {
+const Blog = ({ blg, addBookmarks, addReadingTime }) => {
     console.log(addBookmarks)
     console.log(blg)
+    console.log(addReadingTime)
     const { title, cover, author_img, reading_time, author, posted_date, hashtag } = blg;
     return (
-        <div className='mb-8'>
+        <div className='mb-8 space-y-4'>
             <img className='w-full mb-4 rounded-lg shadow-lg shadow-amber-400' src={cover} alt={`cover from ${title}`} />
             <div className='profile-container flex justify-between items-center'>
                 <div className='flex'><img className='w-16 rounded-full h-15' src={author_img} alt="" />
@@ -29,7 +30,7 @@ const Blog = ({ blg, addBookmarks }) => {
             <h2 className='text-4xl mb-2'>{title}</h2>
             <p>{hashtag.map(h => <span><a href="">#{h}</a></span>)
             }</p>
-
+            <button onClick={() => { addReadingTime(reading_time) }} className='cursor-pointer text-blue-400'>Mark as Read</button>
         </div>
     );
 };
