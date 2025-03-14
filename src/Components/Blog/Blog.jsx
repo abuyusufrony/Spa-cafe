@@ -11,7 +11,7 @@ const Blog = ({ blg, addBookmarks, addReadingTime }) => {
     console.log(addBookmarks)
     console.log(blg)
     console.log(addReadingTime)
-    const { title, cover, author_img, reading_time, author, posted_date, hashtag } = blg;
+    const { title, cover, author_img, reading_time, author, posted_date, hashtag, id } = blg;
     return (
         <div className='mb-8 space-y-4'>
             <img className='w-full mb-4 rounded-lg shadow-lg shadow-amber-400' src={cover} alt={`cover from ${title}`} />
@@ -30,7 +30,7 @@ const Blog = ({ blg, addBookmarks, addReadingTime }) => {
             <h2 className='text-4xl mb-2'>{title}</h2>
             <p>{hashtag.map(h => <span><a href="">#{h}</a></span>)
             }</p>
-            <button onClick={() => { addReadingTime(reading_time) }} className='cursor-pointer text-blue-400'>Mark as Read</button>
+            <button onClick={() => { addReadingTime(reading_time, id) }} className='cursor-pointer text-blue-400'>Mark as Read</button>
         </div>
     );
 };

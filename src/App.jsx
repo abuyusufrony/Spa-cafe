@@ -18,9 +18,11 @@ function App() {
   }
 
 
-  const addReadingTime = (time) => {
+  const addReadingTime = (time, id) => {
     const setNewReadingTime = readingTime + time;
     setReadingtime(setNewReadingTime)
+    const removebookmarkswithid = bookmarks.filter(books => books.id !== id);
+    setBookmarks(removebookmarkswithid)
   }
 
   return (

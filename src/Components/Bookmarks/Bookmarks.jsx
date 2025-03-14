@@ -2,6 +2,7 @@ import React from 'react';
 import Boookmark from '../Bookmark/Boookmark';
 
 const Bookmarks = ({ bookmarks, readingTime }) => {
+    console.log(readingTime)
     return (
 
         <div className='md:w-1/3 bg-gray-100 ml-5  '>
