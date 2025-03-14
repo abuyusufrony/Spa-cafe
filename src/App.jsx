@@ -21,6 +21,9 @@ function App() {
   const addReadingTime = (time, id) => {
     const setNewReadingTime = readingTime + time;
     setReadingtime(setNewReadingTime)
+
+  }
+  const removeBook = (id) => {
     const removebookmarkswithid = bookmarks.filter(books => books.id !== id);
     setBookmarks(removebookmarkswithid)
   }
@@ -30,8 +33,8 @@ function App() {
 
       <Header></Header>
       <div className="book-blog-co md:flex max-w-7xl mx-auto ">
-        <Blogs addBookmarks={addBookmarks} addReadingTime={addReadingTime}></Blogs>
-        <Bookmarks bookmarks={bookmarks} readingTime={readingTime}></Bookmarks>
+        <Blogs addBookmarks={addBookmarks} addReadingTime={addReadingTime} removeBook={removeBook}></Blogs>
+        <Bookmarks bookmarks={bookmarks} readingTime={readingTime}   ></Bookmarks>
 
       </div>
     </>

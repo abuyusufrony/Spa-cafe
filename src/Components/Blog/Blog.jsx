@@ -7,7 +7,7 @@ import { FaBookmark } from "react-icons/fa";
 
 
 
-const Blog = ({ blg, addBookmarks, addReadingTime }) => {
+const Blog = ({ blg, addBookmarks, addReadingTime, removeBook }) => {
     console.log(addBookmarks)
     console.log(blg)
     console.log(addReadingTime)
@@ -30,7 +30,9 @@ const Blog = ({ blg, addBookmarks, addReadingTime }) => {
             <h2 className='text-4xl mb-2'>{title}</h2>
             <p>{hashtag.map(h => <span><a href="">#{h}</a></span>)
             }</p>
-            <button onClick={() => { addReadingTime(reading_time, id) }} className='cursor-pointer text-blue-400'>Mark as Read</button>
+            <button onClick={() => { addReadingTime(reading_time) }} className='cursor-pointer text-blue-400'>Mark as Read</button>
+            <button onClick={() => { removeBook(id) }} className='cursor-pointer ml-16 text-red-500 bg-slate-100'>Remove Bookmark</button>
+
         </div>
     );
 };
